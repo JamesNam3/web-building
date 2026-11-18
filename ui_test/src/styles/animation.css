@@ -1,0 +1,33 @@
+/* Animation 섹션 전용 CSS 애니메이션 */
+@keyframes anim-bounce {
+  0%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-32px); }
+  60% { transform: translateY(0); }
+  80% { transform: translateY(-12px); }
+}
+
+@keyframes anim-shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-12px); }
+  40%, 80% { transform: translateX(12px); }
+}
+
+@keyframes anim-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes anim-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+.anim-bounce { animation: anim-bounce 0.8s ease; }
+.anim-shake { animation: anim-shake 0.6s ease; }
+.anim-spin { animation: anim-spin 0.8s ease; }
+.anim-pulse { animation: anim-pulse 1.2s ease-in-out infinite; }
+
+/* 모션 줄이기 설정을 사용하는 사용자를 위한 배려 */
+@media (prefers-reduced-motion: reduce) {
+  .anim-bounce, .anim-shake, .anim-spin, .anim-pulse { animation: none; }
+}

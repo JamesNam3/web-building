@@ -1,0 +1,8 @@
+/* 레이아웃 관련 스타일 */
+.app-main {
+  padding: 48px 0;
+}
+
+.section-block {
+  scroll-margin-top: 24px;
+}
