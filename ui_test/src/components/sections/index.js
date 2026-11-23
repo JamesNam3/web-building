@@ -14,6 +14,7 @@ import MenuSection from './MenuSection'
 import SidebarSection from './SidebarSection'
 import HoverSection from './HoverSection'
 import SwipeSection from './SwipeSection'
+import FlexNavigationSection from './FlexNavigationSection'
 
 /**
  * 섹션 레지스트리: 배열 순서대로 화면에 렌더링됩니다.
@@ -39,6 +40,7 @@ const sections = [
   { id: 'sidebar', Component: SidebarSection },
   { id: 'hover', Component: HoverSection },
   { id: 'swipe', Component: SwipeSection },
+  { id: 'flex-navigation', Component: FlexNavigationSection },
   // ... 16개 UI 요소를 순차적으로 추가
 ]
 
